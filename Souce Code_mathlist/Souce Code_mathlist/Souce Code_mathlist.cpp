@@ -6,12 +6,15 @@
 
 int main()
 {
-    int arr[3] = { 3,15,75 };
-    E_List lst(arr);
-    int first = lst[8];
+    //{-1,40,-1,-1,2560};
+    //{ -1,405,-1,-1,-1,5 };
+    int arr[6] = { -1,405,-1,-1,-1,5 };
+    E_List lst(arr,6);
+    std::cout << lst.get_a1();
+    
     //first = lst[3];
     
-    std::cout << "Hello World!\n" << first;
+    //std::cout << "Hello World!\n" << first;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
