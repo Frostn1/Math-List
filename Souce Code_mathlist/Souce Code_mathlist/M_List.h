@@ -9,6 +9,8 @@ public:
 	M_List(float a1, float d);
 	M_List(int a1, float d);
 	M_List(float* arr);
+	M_List(float* arr, int size);
+	M_List(int* arr, int size);
 	
 	//methods
 	void add(int an, int n);//{ int an } number to add/discover, { int n } spot of said number
@@ -17,7 +19,8 @@ public:
 	int get_index(int an);//{ int an } number to discover, returns said number index in the list
 	int get_index(float an);//{ int an } number to discover, returns said number index in the list
 	float get_number(int n);//{ int n } index of number to discover, returns number of said index in the list
-	
+	float get_a1();
+	float get_d();
 
 	float operator[](int val);
 
@@ -41,7 +44,7 @@ public:
 	E_List(float a1, float d);
 	E_List(int a1, float d);
 	E_List(float* arr);
-	E_List(float* arr, int check);
+	E_List(float* arr, int size);
 	E_List(int* arr, int size);
 
 	int get_index(int an);//{ int an } number to discover, returns said number index in the list

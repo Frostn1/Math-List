@@ -8,8 +8,8 @@ int main()
 {
     //{-1,40,-1,-1,2560};
     //{ -1,405,-1,-1,-1,5 };
-    int arr[6] = { -1,405,-1,-1,-1,5 };
-    E_List lst(arr,6);
+    int arr[5] = { -1,2,-1,-1,5 };
+    M_List lst(arr,5);
     std::cout << lst.get_a1();
     
     //first = lst[3];
